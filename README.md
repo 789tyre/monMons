@@ -23,15 +23,15 @@ monMons do all of the battling.
 
 
 If you want to create more monMons then you can run the 
-'''
+```
 createChildren(numOfChildren)
-'''
+```
 function in the python console  which will create that many children 
 from the pool
 
 Or you can make them fight and have either 1 or a few winners with
-'''
+```
 startBattleRoyal(winnersLeft)
-'''
+```
 I have yet to implement a way to see all the winners and their final
 stats cleanly

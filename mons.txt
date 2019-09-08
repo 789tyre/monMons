@@ -1,6 +1,0 @@
-Red,Red,4,15,9
-Red,Red,12,12,9
-Red,Red,14,14,10
-Red,Red,4,14,9
-Red,Red,4,15,10
-Red,Red,4,12,9

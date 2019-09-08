@@ -2,7 +2,7 @@ from random import randint
 from math import floor
 
 length = 5 #Expected length for each mon
-fileName = "mons.txt" #Files that hold all the info about the mons
+fileName = "fighterMons.txt" #Files that hold all the info about the mons
 rangeOfStats = 100 #This applies to attack and defence values
 chanceOfMutation = 4 #The higher the number the less chance of mutation
 pool = []
@@ -11,10 +11,10 @@ class mon(object):
     def __init__(self, name, name2, health, attack, defence):
         self.name = name
         self.name2 = name2
-        self.fullHealth = health
-        self.health = health
-        self.attack = attack
-        self.defence = defence
+        self.fullHealth = int(health)
+        self.health = int(health)
+        self.attack = int(attack)
+        self.defence = int(defence)
         self.wins = 0 # How many times did this mon win
         self.lives = 3 # Number of chances at victory
     
@@ -42,8 +42,6 @@ def importMons(fileName):
             if line[0][0] == "#":continue
             if(len(line) == length):
                 #Add that mon to the array of mons
-                for j in range(length-3,length):
-                    line[j] = int(line[j])
                 pool.append(mon(*line))
             else:
                 print("Line ",i+1, " is invalid")
@@ -111,7 +109,7 @@ def clash(mon1, mon2):
 
 def fight(mon1, mon2):
     #This is where the winner of the two mons are decided
-    while mon1.health > 0 and mon2.health > 0:
+    while int(mon1.health) > 0 and int(mon2.health) > 0:
         clash(mon1, mon2)
         if (mon2.health <= 0): return [mon1, mon2]
         clash(mon2, mon1)
@@ -129,7 +127,6 @@ def startBattleRoyale(winnersLeft):
 
     while True:
         #Determine the winner
-        #print(len(pool))
         results = fight(*getParents())
 
         #Delete the loser and the winner from the pool
@@ -157,6 +154,7 @@ def startBattleRoyale(winnersLeft):
 importMons(fileName)
 for i in range(5000):
     pool = createNewGen(pool)
+startBattleRoyale(1)
 print("WINNER! WINNER! WINNER!")
 print("Name: {} {}".format(pool[0].name, pool[0].name2))
 print("Max Health: ", pool[0].fullHealth)
