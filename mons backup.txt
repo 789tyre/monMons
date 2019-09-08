@@ -1,0 +1,14 @@
+#name,health,attack,defence
+Red,Red,10,15,5
+Orange,Orange,15,8,9
+Yellow,Yellow,10,5,8
+Green,Green,20,10,10
+Blue,Blue,25,4,15
+Indigo,Indigo,11,7,10
+Violet,Violet,12,12,8
+#Testing,Testing,1#,2,4
+#missingno,thing
+#Bob is awesome. His defence of -1 allows any attack to
+#go through. He even has cool downs for attacking and
+#defending (the 40 and 50)
+#Bob,99,500,-1,40,50,
