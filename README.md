@@ -1,4 +1,4 @@
-#monMon Arena
+# monMon Arena
 
 This was a little project that spawned out of a game called 
 "Pocket Frogs" made by NimbleBit where you tame, breed and sell 
@@ -14,7 +14,7 @@ they will copy their behavior of fighting. They don't feel that
 they should do anything else but to fight and produce more better
 and stronger versions of themselves.
 
-###Prerequisites
+### Prerequisites
 
 Python 3 is all that is required to run this
 The main bulk of the program is in the arena.py file where the
