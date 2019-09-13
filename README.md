@@ -34,7 +34,7 @@ I have yet to implement a way to see all the winners and their final
 stats cleanly
 
 There are three diffrent descriptions of the monMons.
-##Fighter
+## Fighter
 These monMons have looked up to Pokemon and have decided to take one
 thing away, fighting.
 
@@ -66,7 +66,7 @@ them drops dead (health <= 0)
 Once the total population reaches half it's size, then, they all
 reproduce until they are back at full size and repeat the process.
 
-##Painter
+## Painter
 These monMons have took on a more peaceful approch to life. In fact,
 they don't actually die. All they do is represent a color of a pixel
 in an image. They have 3 attributes:
@@ -74,7 +74,7 @@ in an image. They have 3 attributes:
     + Green
     + Blue
 
-##Forest Dwellers
+## Forest Dwellers
 These monMons are more interesting. They are a combination of fighters
 and painters. They have 6 attributes:
     + Health
