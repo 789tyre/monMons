@@ -1,5 +1,5 @@
 from random import randint
-from math import floor
+from math import ceil
 
 length = 5 #Expected length for each mon
 fileName = "fighterMons.txt" #Files that hold all the info about the mons
@@ -26,7 +26,7 @@ class mon(object):
             return 0
 
     def Defend(self):
-        chance = randint(1,rangeOfStats)
+        chance = randint(1, rangeOfStats)
         if chance <= self.defence:
             return chance
         else:
@@ -92,7 +92,7 @@ def createChildren(numOfChildren):
     return newMons
 
 def createNewGen(pool):
-    startBattleRoyale(floor(len(pool)/2)) #Cuts the population down
+    startBattleRoyale(ceil(len(pool)/2)) #Cuts the population down
     with open(fileName, "w") as f: 
         f.write("")
     return createChildren(len(pool)*2)
@@ -152,7 +152,8 @@ def startBattleRoyale(winnersLeft):
 
 #Start of main program ----------------------------------------------------------------
 importMons(fileName)
-for i in range(5000):
+#createChildren(5000)
+for i in range(10):
     pool = createNewGen(pool)
 startBattleRoyale(1)
 print("WINNER! WINNER! WINNER!")
@@ -163,4 +164,3 @@ print("Attack: ", pool[0].attack)
 print("Defence: ", pool[0].defence)
 print("Wins: ", pool[0].wins)
 print("Lives left: ", pool[0].lives)
-#createChildren(5000)
