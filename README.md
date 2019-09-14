@@ -39,14 +39,14 @@ These monMons have looked up to Pokemon and have decided to take one
 thing away, fighting.
 
 Each mon has 3 main attributes:
-    + Health
-    + Attack
-    + Defence
+    * Health
+    * Attack
+    * Defence
 
 They also have secondary attributes:
-    + Wins
-    + Lives (chances)
-    + Name and Name2 (these don't do anything)
+    * Wins
+    * Lives (chances)
+    * Name and Name2 (these don't do anything)
 
 When 2 monMons are pitted against each other, the first mon gets to
 attack by generating a number between 1 and the range (set at the 
@@ -70,19 +70,19 @@ reproduce until they are back at full size and repeat the process.
 These monMons have took on a more peaceful approch to life. In fact,
 they don't actually die. All they do is represent a color of a pixel
 in an image. They have 3 attributes:
-    + Red
-    + Green
-    + Blue
+    * Red
+    * Green
+    * Blue
 
 ## Forest Dwellers
 These monMons are more interesting. They are a combination of fighters
 and painters. They have 6 attributes:
-    + Health
-    + Attack
-    + Defence
-    + Red
-    + Green
-    + Blue
+    * Health
+    * Attack
+    * Defence
+    * Red
+    * Green
+    * Blue
 
 They decided that names were not nessesary and a total waste of space.
 
